@@ -237,7 +237,7 @@ header{
     margin: 0px auto;
     width: 80%;
     height: 500px;
-    background-image: url('/images/CuriosityFondo.jpg');
+    background-image: url('images/CuriosityFondo.jpg');
     background-size: 105%;
     background-position: top left;
 }
@@ -269,7 +269,7 @@ header{
     margin: 0px auto;
     width: 80%;
     height: 550px;
-    background-image: url('/images/OpportunityFondo.png');
+    background-image: url('images/OpportunityFondo.png');
     background-size: 105%;
     background-position: top left;
 }
@@ -301,7 +301,7 @@ header{
     margin: 0px auto;
     width: 80%;
     height: 500px;
-    background-image: url('/images/SpiritFondo.jpg');
+    background-image: url('images/SpiritFondo.jpg');
     background-size: 100%;
     background-position: top left;
 }
