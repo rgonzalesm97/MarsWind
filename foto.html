@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/foto.js"></script>
+    <title>Mars Wind</title>
+</head>
+<body>
+
+    <header>
+        <div id="headcontainer">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="/images/Logo-Mars-Wind.png" alt="Mars Wind">
+                </a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="navlinks">
+                <ul id="navlinksall">
+                    <li class="navlink">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="navlink">
+                        <a href="foto.html">Imagenes</a>
+                    </li>
+                    <li class="navlink">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="buttons">
+        <div id="buttons-container">
+
+            <div id="buttons-rovers">
+                <button onclick="ChangeColor(this)" id="curiosity-btn" class="roverbtn actuall-btn">Curiosity</button>
+                <button onclick="ChangeColor(this)" id="opportunity-btn" class="roverbtn actuall-btn">Opportunity</button>
+                <button onclick="ChangeColor(this)" id="spirit-btn" class="roverbtn actuall-btn">Spirit</button>
+            </div>
+
+            <div id="sol">
+                
+                <label for="sollabel" style="opacity: 0; animation: appear 1s forwards;">Sol:</label>
+                
+
+                <div id="scroll-sol">
+                    
+                </div>
+
+                <div id="sol-number-div">
+                    <span id="sol-number"></span>
+                </div>
+                
+                <div id="questionmark">
+                    <p>?</p>
+                    <div id="textoayuda">El término Sol es utilizado por los astrónomos planetarios para referirse a la duración de un día solar en Marte, el cual equivale a 24 horas, 39 minutos y 35,244 segundos.</div>
+                </div>
+
+                <button id="search" onclick="Buscar()">Buscar</button>
+
+                <div id="shadow_slider" class="shadow"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="imagenes">
+        
+        <div id="roverimages">
+            
+        </div>
+
+        <div id="playpausebtns">
+            
+        </div>
+
+        <div id="roverinfo">
+            <h1 id="roverSol"></h1>
+            <h3 id="fotoshoy"></h3>
+            <p id="fotoNumber"></p>
+            <hr class="separationLines">
+            <p id="roverName"></p>
+            <p id="roverLaunch"></p>
+            <p id="roverLand"></p>
+            <p id="roverStatus"></p> 
+            <p id="roverTotPics"></p>
+            <div id="slideshowActivarot"></div>
+        </div>
+        <div id="shadow_images" class="shadow"></div>
+    </section>
+
+    
+
+
+</body>
+</html>

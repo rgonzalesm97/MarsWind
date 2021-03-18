@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/contacto.js"></script>
+    <title>Mars Wind</title>
+</head>
+<body>
+
+    <div id="holecontainer">
+        <header>
+            <div id="headcontainer">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="/images/Logo-Mars-Wind.png" alt="Mars Wind">
+                    </a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="navlinks">
+                    <ul id="navlinksall">
+                        <li class="navlink">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="navlink">
+                            <a href="foto.html">Imagenes</a>
+                        </li>
+                        <li class="navlink">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;">
+            <div id="contactocontainer">
+                <h1>Contactanos</h1>
+                <form method="POST" id="contactform" action="https://formspree.io/f/xwkwgzrk">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Nombre:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="_replyto" placeholder="email@domain.tld" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message">Mensaje:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                &copy; MarsWind 
+            </p>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
