@@ -162,10 +162,10 @@ function CreateSlideShow(imageArr){
         `;
 
         document.getElementById("playpausebtns").innerHTML = `
-        <img src="/images/next_left.png" style="margin-right: 50px;" alt="" id="leftbtn" class="hide">
-        <img src="/images/pause.png" alt="" id="pausebtn">
-        <img src="/images/play.png" alt="" id="playbtn" class="hide">
-        <img src="/images/next_right.png" style="margin-left: 30px" alt="" id="rigthbtn" class="hide">
+        <img src="images/next_left.png" style="margin-right: 50px;" alt="" id="leftbtn" class="hide">
+        <img src="images/pause.png" alt="" id="pausebtn">
+        <img src="images/play.png" alt="" id="playbtn" class="hide">
+        <img src="images/next_right.png" style="margin-left: 30px" alt="" id="rigthbtn" class="hide">
         `;
 
         document.getElementById("slideshowActivator").addEventListener('change', () => {
@@ -263,13 +263,7 @@ function CreateSlideShow(imageArr){
     }
 }
 
-
-
-
-
-
-
-
+//-------------------------------FUNCIONES DE AYUDA-------------------------------
 
 function fireEvent(node, eventName) {
     // Make sure we use the ownerDocument from the provided node to avoid cross-window problems
