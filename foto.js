@@ -5,12 +5,12 @@ const shadow_images = document.getElementById("shadow_images");
 
 function Buscar(){
     if(roverToSearch){
-        document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">Cargando...</h1>`;
+        document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">Loading...</h1>`;
         GetRoverData(roverToSearch, "RellenarDatos")
         LoadImages(roverToSearch, sliderValue.textContent)
         if(!shadow_images.classList.contains("hideshadow")) shadow_images.classList.add("hideshadow");
     }else{
-        alert("Selecciona un rover");
+        alert("Select a rover");
     } 
 }
 
@@ -85,7 +85,7 @@ async function GetRoverData(rover, opcion){
             CreateSlider(data)
         }
     }catch(e){
-        alert("Ocurrió un error al cargar los datos, por favor reinicie la página.")
+        alert("An error occurred while loading the data, please restart the page.")
     }   
 }
 
@@ -119,11 +119,11 @@ async function LoadImages(rover, sol){
         if(fotoArray.length > 0){
             CreateSlideShow(fotoArray);
         }else{
-            document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">Ninguna imagen fue tomada este Sol (día marciano). ¡Busca otro Sol, hay miles de fotos más!</h1>`;       
+            document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">No image was taken this Sol (Martian day). Look for another Sol, there are thousands of more photos!</h1>`;       
         }
 
     }catch(e){
-        document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">Ocurrió un error al cargar las imágenes, por favor reinicie la página.</h1>`;
+        document.getElementById("roverimages").innerHTML = `<h1 style="color: white; margin-top: 20%; text-align: center;">An error occurred while loading the data, please restart the page.</h1>`;
     }
 }
 
@@ -144,14 +144,14 @@ function CreateSlideShow(imageArr){
         `;
         document.getElementById("fotoNumber").textContent = `Foto N° ${fotoNumber}`;
         fotoIndex += 2;
-        if(imageArr.length === 2) fotoIndex = 0; /// ver edge cases
+        if(imageArr.length === 2) fotoIndex = 0; 
 
         slideshowInterval = setInterval(NextImage, (3000));
 
         document.getElementById("slideshowActivarot").innerHTML = `
         <hr class="separationLines">
         <input type="checkbox" id="slideshowActivator" checked>
-        <label for="">Activar Slideshow</label>
+        <label for="">Activate Slideshow</label>
         <select id="fpm">
             <option value="20">20 FPM</option>
             <option value="30">30 FPM</option>
@@ -220,7 +220,7 @@ function CreateSlideShow(imageArr){
         <div class="slide"></div>
         `;
         document.getElementById("slideshowActivarot").innerHTML = ``;
-        document.getElementById("fotoNumber").textContent = `Foto N° 1`;
+        document.getElementById("fotoNumber").textContent = `Photo N° 1`;
         document.getElementById("playpausebtns").innerHTML = ``;
     }
 
@@ -259,7 +259,7 @@ function CreateSlideShow(imageArr){
             if(fotoIndex - 1 < 0) fotoIndex = imageArr.length - 1;
             else fotoIndex--;
         }
-        document.getElementById("fotoNumber").textContent = `Foto N° ${fotoNumber}`;
+        document.getElementById("fotoNumber").textContent = `Photo N° ${fotoNumber}`;
     }
 }
 

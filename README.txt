@@ -1,4 +1,3 @@
-Este es mi primer projecto, una pagina web hecha con html, css y JavaScript puro.
+Made with vanilla javascript, html and css. This website shows the images of the different rovers sent to Mars (Curiosity, Spirit and Opportunity). 
 
-Esta pagina muestra las fotos tomadas por los rovers Curiosity, Opportunity y Spirit
-durante toda sus misiones. Las fotos son extraidas de la API de la Nasa.
+Choose a rover, choose the Sun (Martian day) and it will show all the photos taken that sun by the selected rover. The images are requested by the NASA API. This API retrieves data from the rovers. Pay attention to the home banner… are they always the same images?
