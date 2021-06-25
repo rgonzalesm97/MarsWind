@@ -92,11 +92,11 @@ async function GetRoverData(rover, opcion){
 function RellenarDatos(dataDelRover){
     roverSol.textContent = `Sol: ${sliderValue.textContent}`;
     
-    roverName.textContent = `Nombre: ${dataDelRover.photo_manifest.name}`;
-    roverLaunch.textContent = `Dia de lanzamiento: ${dataDelRover.photo_manifest.launch_date}`;
-    roverLand.textContent = `Dia de aterrizaje en Marte: ${dataDelRover.photo_manifest.landing_date}`;
+    roverName.textContent = `Name: ${dataDelRover.photo_manifest.name}`;
+    roverLaunch.textContent = `Launch date: ${dataDelRover.photo_manifest.launch_date}`;
+    roverLand.textContent = `Landing date on Mars: ${dataDelRover.photo_manifest.landing_date}`;
     roverStatus.textContent = `Status: ${dataDelRover.photo_manifest.status}`;
-    roverTotPics.textContent = `Fotos totales: ${dataDelRover.photo_manifest.total_photos}`;   
+    roverTotPics.textContent = `Total photos: ${dataDelRover.photo_manifest.total_photos}`;   
 }
 
 
@@ -115,7 +115,7 @@ async function LoadImages(rover, sol){
         for(let prop of data.photos){
             fotoArray.push(prop.img_src);
         }
-        fotosHoy.textContent = `Fotos tomadas: ${fotoArray.length}`;
+        fotosHoy.textContent = `Photos taken: ${fotoArray.length}`;
         if(fotoArray.length > 0){
             CreateSlideShow(fotoArray);
         }else{
